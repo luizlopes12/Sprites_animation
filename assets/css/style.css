@@ -1,0 +1,89 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.ceu {
+  position: relative;
+  background-color: aqua;
+  width: 100%;
+  height: 80vh;
+}
+
+.chao {
+  position: absolute;
+  background-color: rgb(23, 186, 1);
+  width: 150%;
+  height: 20vh;
+  display: flex;
+  overflow: hidden;
+  animation: uepa 0.2s linear infinite;
+}
+
+.bomdia {
+  height: 20px;
+  width: 50px;
+  background-color: rgb(14, 117, 1);
+  margin-top: 40px;
+  margin-left: 20px;
+  opacity: 0.2;
+}
+
+.bomdia2 {
+  height: 20px;
+  width: 50px;
+  background-color: rgb(14, 117, 1);
+  margin-top: 90px;
+  margin-left: 80px;
+  opacity: 0.2;
+}
+
+.bomdia3 {
+  height: 20px;
+  width: 65px;
+  background-color: rgb(14, 117, 1);
+  margin-top: 160px;
+  margin-left: 160px;
+  opacity: 0.2;
+}
+
+#anima-div {
+  z-index: 999;
+  position: absolute;
+  bottom: -50px;
+  left: 30%;
+  margin: auto;
+  background: url("../img/sprites.png");
+  height: 468px;
+  width: 363px;
+  animation: sprite 0.5s steps(10) infinite;
+}
+
+@keyframes sprite {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -3630px;
+  }
+}
+
+@keyframes uepa {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -200px;
+  }
+  100% {
+    left: -400px;
+  }
+}
